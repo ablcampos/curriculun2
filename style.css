@@ -1,0 +1,168 @@
+/* comentario 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color:  #003366;
+    font-size: 64px;
+    margin: 0;
+}
+
+h2{
+    color:  #333333;
+    font-size: 32px;
+    margin: 0;
+}
+
+p{
+    color: #666666;
+    font-size: 20px;
+    text-align: left;
+}
+
+ul{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar{
+    background-color: #003366;
+    width: 280px;
+    height:  100vh; /* VH largura do browswer baseada no navegador */
+    display: flex;
+    align-items: center; /* ALINHA DE CIMA PARA BAIXO*/
+    justify-content: center; /*ALINHA ESQUERDA DIREITA */
+    text-align: center;
+}
+
+.perfil{          
+    border-radius: 50%;   
+    max-width:120px;   
+    margin-bottom: 40px;  
+}
+
+.sidebar ul{       
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar li{       
+     margin-bottom: 30px; 
+}
+
+ .sidebar ul a{
+    color: white;
+    text-decoration: none;/*retira sublinhado*/
+    font-size: 20px;
+    font-family: 'bebas neue',sans-serif;    
+}
+
+.sidebar ul a:hover{
+    color: yellow;
+}
+
+.midias{
+    margin-top: 50px;
+}
+
+.midias a{    
+    margin-left: 8px;
+    margin-right: 8px;   
+}
+
+.content{
+    width: 986px;
+    margin-left: 50px;
+}
+
+/*para telas de ate 1279*/
+@media (max-width: 1279px){
+
+        h1{ 
+        font-size: 32px;
+        }
+
+        h2{
+        font-size: 24px;
+        }
+
+        P{
+        font-size: 16px;
+        }
+
+        .content{
+            width: 70%;
+            margin-left: 25px;
+        }
+
+        .sidebar{
+            width: 20%;
+        }
+
+        .sidebar ul a{
+            font-size: 16px;
+        }
+        
+        .perfil{
+            width: 80px;
+        }
+
+        .midias img{
+            width: 25px;
+        }
+
+        .midias a{    
+            margin-left: 4px;
+            margin-right: 4px;   
+        }
+}
+
+@media (max-width: 565px){
+
+    h1{ 
+    font-size: 16px;
+    }
+
+    h2{
+    font-size: 14px;
+    }
+
+    P{
+    font-size: 14px;
+    }
+
+    .content{
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .sidebar{
+        width: 30%;
+    }
+
+    .sidebar ul a{
+        font-size: 12px;
+    }
+    
+    .perfil{
+        width: 40px;
+    }
+
+    .midias img{
+        width: 15px;
+    }
+
+    .midias a{    
+        margin-left: 2px;
+        margin-right: 2px;   
+    }
+}
